@@ -112,7 +112,7 @@ my-project/
 ├── .env                   # Environment variables
 ├── .eslint.config.js      # ESLint configuration
 ├── .prettierrc            # Prettier configuration
-|-- bun.build.js           # Bun.js build configuration
+├── bun.build.js           # Bun.js build configuration
 ├── docker-compose.yml     # Docker Compose configuration
 ├── Dockerfile             # Dockerfile for containerization
 ├── package.json           # Project dependencies and scripts
