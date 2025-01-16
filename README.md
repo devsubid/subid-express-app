@@ -18,16 +18,16 @@
 
 ## 📦 Installation
 
-You can use `npx` to initialize the project in seconds:
+You can use `bunx` to initialize the project in seconds:
 
 ```bash
-npx subid-express-app init <project-name>
+bunx subid-express-app init <project-name>
 ```
 
 Or install it globally:
 
 ```bash
-npm install -g subid-express-app
+bun install -g subid-express-app
 subid-express-app init <project-name>
 ```
 
@@ -38,7 +38,7 @@ subid-express-app init <project-name>
 1. Run the CLI tool to initialize a new project:
 
    ```bash
-   npx subid-express-app init my-project
+   bunx subid-express-app init my-project
    ```
 
 2. Navigate to the project directory:
