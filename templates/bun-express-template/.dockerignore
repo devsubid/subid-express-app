@@ -1,0 +1,10 @@
+data/
+dist/
+node_modules/
+.gitiignore
+.prettierrc
+eslint.config.js
+README.md
+backup/
+data-mariadb/
+init.sql

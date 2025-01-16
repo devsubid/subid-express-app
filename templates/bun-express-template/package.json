@@ -1,0 +1,37 @@
+{
+  "name": "bun-express-template",
+  "module": "src/app.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run src/app.ts --hot",
+    "build": "bun run bun.build.ts",
+    "start": "bun run dist/app.js",
+    "lint": "eslint 'src/**/*.{ts,js}' --fix",
+    "format": "prettier --write 'src/**/*.{ts,js,json,md}'",
+    "db:up": "docker compose up -d db",
+    "db:down": "docker compose down db",
+    "db:logs": "docker compose logs -f db",
+    "db:shell": "docker compose exec mongo db",
+    "db:backup": "docker compose exec db mongodump --archive=/backup/backup.gz --gzip",
+    "db:restore": "docker compose exec db mongorestore --archive=/backup/backup.gz --gzip"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "@types/bun": "latest",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.6",
+    "esbuild": "^0.24.2",
+    "eslint": "^9.18.0",
+    "globals": "^15.14.0",
+    "prettier": "^3.4.2",
+    "typescript-eslint": "^8.20.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "express-file-routing": "^3.0.3",
+    "mongoose": "^8.9.5"
+  }
+}
