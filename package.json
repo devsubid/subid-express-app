@@ -1,11 +1,12 @@
 {
   "name": "subid-express-app",
   "version": "1.0.0",
-  "description": "A CLI tool to initialize an Express + Bun.js project",
+  "author": "Subid Das",
   "main": "bin/cli.js",
   "bin": {
     "subid-express-app": "./bin/cli.js"
   },
+  "description": "A CLI tool to initialize an Express + Bun.js project",
   "files": [
     "bin",
     "templates"
@@ -16,9 +17,6 @@
     "bun",
     "template"
   ],
-  "author": "Subid Das",
   "license": "MIT",
-  "dependencies": {
-    "fs-extra": "^11.0.0"
-  }
+  "type": "module"
 }
